@@ -72,6 +72,52 @@ li {
     height: 40px;
     width: 40px;
 }
+.right-menu li:not(:nth-child(3)) {
+    fill: #000000;
+}
+.right-menu li:not(:nth-child(2)){
+    stroke: #000000;
+}
+
+.right-menu li:hover {
+    fill: grey;
+    color: grey;
+}
+
+.right-menu li:hover:not(:nth-child(2)) {
+    stroke: grey;
+}
+
+.right-menu li:nth-child(1) {
+    position: relative;
+}
+
+.sub-menu {
+    position: absolute;
+    color: black;
+    width: 100px;
+    height: 100px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 50px;
+    border: 1px solid black;
+}
+
+
+li.sub-items {
+    width: 100%;
+    height: 50%;
+}
+li.sub-items:hover {
+    background-color: rgba(0, 0, 0, 0.057);
+    color: black;
+}
+
+.sub-menu-show {
+    display: flex;
+}
 
 @media screen and (max-width: 1200px) {
     
@@ -154,5 +200,9 @@ li {
     }
     .show {
         display: block;
+    }
+
+    .sub-menu {
+        top: -100px;
     }
 }
