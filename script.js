@@ -7,13 +7,15 @@ let langs = {
         'lang': 'EN',
         'haut': 'Tops',
         'bas': 'Bottoms',
-        'chapeau': 'Hats'
+        'chapeau': 'Hats',
+        'vetements': 'Our clothes'
     },
     'fr': {
         'lang': 'FR',
         'haut': 'Haut',
         'bas': 'Bas',
-        'chapeau': 'Chapeau'
+        'chapeau': 'Chapeau',
+        'vetements': 'Nos vêtements'
     }
 }
 
