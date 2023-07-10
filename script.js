@@ -4,13 +4,13 @@ if (!localStorage.getItem('lang')) {
 
 let langs = {
     'en': {
-        lang: 'EN',
+        'lang': 'EN',
         'haut': 'Tops',
         'bas': 'Bottoms',
         'chapeau': 'Hats'
     },
     'fr': {
-        lang: 'FR',
+        'lang': 'FR',
         'haut': 'Haut',
         'bas': 'Bas',
         'chapeau': 'Chapeau'

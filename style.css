@@ -201,8 +201,4 @@ li.sub-items:hover {
     .show {
         display: block;
     }
-
-    .sub-menu {
-        top: -100px;
-    }
 }
