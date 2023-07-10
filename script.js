@@ -24,6 +24,7 @@ addEventListener('resize', () => {
         } else {
             menu.classList.toggle('show');
             rightMenu.classList.toggle('show');
+            header.style.height = '100px';
         }
     } else {
         header.style.height = '100px';
