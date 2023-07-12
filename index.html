@@ -5,72 +5,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>US Streetwear</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <div class="top-nav-container">
-                <div class="logo">
-                    <h2>US</h2>
-                </div>
-                <div class="hamburger-container">
-                    <div class="hamburger"></div>
-                </div>
-            </div>
-            <div class="menu">
-                <ul class="menu-list">
-                    <li class="list-items" id="translate" data-type="haut" onclick="location.href='/produits.html?type=haut'"></li>
-                    <li class="list-items" id="translate" data-type="bas" onclick="location.href='/produits.html?type=bas'"></li>
-                    <li class="list-items" id="translate" data-type="chapeau" onclick="location.href='/produits.html?type=chapeau'"></li>
+    <nav class="flex">
+        <div class="flex container logo--container">
+            <h2 class="logo">US</h2>
+        </div>
+
+        <div class="flex container nav--container">
+            <div class="flex nav--links">
+                <ul class="flex nav--list">
+                    <li class="flex nav--items" id="#translate" data-translate='top'>Haut</li>
+                    <li class="flex nav--items" id="#translate" data-translate='bottom'>Bas</li>
+                    <li class="flex nav--items" id="#translate" data-translate='hat'>Chapeau</li>
                 </ul>
             </div>
-            <div class="right-menu">
-                <ul class="menu-list">
-                    <li class="list-items toggle-menu">
-                        <span class="lang" id="translate" data-type="lang"></span>
-                        <ul class="sub-menu lang-selector">
-                            <li class="sub-items french">Français</li>
-                            <li class="sub-items english">English</li>
-                        </ul>
+            <div class="flex nav--client">
+                <ul class="flex nav--list">
+                    <li class="flex nav--items menu--toggler">
+                        <span id="lang">FR</span>
                     </li>
-                    <li class="list-items">
-                        <svg width="30px" height="30px" viewBox="0 0 32 32" version="1.1"
+                    <li class="flex nav--items">
+                        <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M28 9.25h-5.25v-1.117c0.004-0.087 0.006-0.189 0.006-0.292 0-3.643-2.953-6.596-6.596-6.596-0.082 0-0.164 0.002-0.246 0.004l0.012-0c-0.035-0.001-0.076-0.001-0.117-0.001-3.627 0-6.568 2.941-6.568 6.568 0 0.114 0.003 0.226 0.009 0.338l-0.001-0.016v1.111h-5.25c-1.518 0.002-2.748 1.232-2.75 2.75v14c0.003 2.622 2.128 4.747 4.75 4.75h20c2.622-0.003 4.747-2.128 4.75-4.75v-14c-0.002-1.518-1.232-2.748-2.75-2.75h-0zM10.75 8.133c-0.007-0.096-0.010-0.208-0.010-0.322 0-2.797 2.267-5.064 5.064-5.064 0.047 0 0.095 0.001 0.142 0.002l-0.007-0c0.066-0.003 0.143-0.005 0.22-0.005 2.816 0 5.1 2.283 5.1 5.1 0 0.104-0.003 0.207-0.009 0.309l0.001-0.014v1.111h-10.5zM29.25 26c-0.001 1.794-1.456 3.249-3.25 3.25h-20c-1.794-0.002-3.248-1.456-3.25-3.25v-14c0.001-0.69 0.56-1.249 1.25-1.25h5.25v6.25c0 0.414 0.336 0.75 0.75 0.75s0.75-0.336 0.75-0.75v0-6.25h10.5v6.25c0 0.414 0.336 0.75 0.75 0.75s0.75-0.336 0.75-0.75v0-6.25h5.25c0.69 0.001 1.249 0.56 1.25 1.25v0z">
-                            </path>
+                            <g clip-path="url(#clip0_15_35)">
+                                <rect width="24" height="24" fill="white" />
+                                <path
+                                    d="M5.33331 6H19.8672C20.4687 6 20.9341 6.52718 20.8595 7.12403L20.1095 13.124C20.0469 13.6245 19.6215 14 19.1172 14H16.5555H9.44442H7.99998"
+                                    stroke="#000000" stroke-linejoin="round" />
+                                <path
+                                    d="M2 4H4.23362C4.68578 4 5.08169 4.30341 5.19924 4.74003L8.30076 16.26C8.41831 16.6966 8.81422 17 9.26638 17H19"
+                                    stroke="#000000" stroke-linecap="round" stroke-linejoin="round" />
+                                <circle cx="10" cy="20" r="1" stroke="#000000" stroke-linejoin="round" />
+                                <circle cx="17.5" cy="20" r="1" stroke="#000000" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_15_35">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
                         </svg>
                     </li>
-                    <li class="list-items">
-                        <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                    <li class="flex nav--items">
+                        <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z"
-                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            <path
-                                d="M20.5899 22C20.5899 18.13 16.7399 15 11.9999 15C7.25991 15 3.40991 18.13 3.40991 22"
-                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <g clip-path="url(#clip0_15_82)">
+                                <rect width="24" height="24" fill="white" />
+                                <g filter="url(#filter0_d_15_82)">
+                                    <path
+                                        d="M14.3365 12.3466L14.0765 11.9195C13.9082 12.022 13.8158 12.2137 13.8405 12.4092C13.8651 12.6046 14.0022 12.7674 14.1907 12.8249L14.3365 12.3466ZM9.6634 12.3466L9.80923 12.8249C9.99769 12.7674 10.1348 12.6046 10.1595 12.4092C10.1841 12.2137 10.0917 12.022 9.92339 11.9195L9.6634 12.3466ZM4.06161 19.002L3.56544 18.9402L4.06161 19.002ZM19.9383 19.002L20.4345 18.9402L19.9383 19.002ZM16 8.5C16 9.94799 15.2309 11.2168 14.0765 11.9195L14.5965 12.7737C16.0365 11.8971 17 10.3113 17 8.5H16ZM12 4.5C14.2091 4.5 16 6.29086 16 8.5H17C17 5.73858 14.7614 3.5 12 3.5V4.5ZM7.99996 8.5C7.99996 6.29086 9.79082 4.5 12 4.5V3.5C9.23854 3.5 6.99996 5.73858 6.99996 8.5H7.99996ZM9.92339 11.9195C8.76904 11.2168 7.99996 9.948 7.99996 8.5H6.99996C6.99996 10.3113 7.96342 11.8971 9.40342 12.7737L9.92339 11.9195ZM9.51758 11.8683C6.36083 12.8309 3.98356 15.5804 3.56544 18.9402L4.55778 19.0637C4.92638 16.1018 7.02381 13.6742 9.80923 12.8249L9.51758 11.8683ZM3.56544 18.9402C3.45493 19.8282 4.19055 20.5 4.99996 20.5V19.5C4.70481 19.5 4.53188 19.2719 4.55778 19.0637L3.56544 18.9402ZM4.99996 20.5H19V19.5H4.99996V20.5ZM19 20.5C19.8094 20.5 20.545 19.8282 20.4345 18.9402L19.4421 19.0637C19.468 19.2719 19.2951 19.5 19 19.5V20.5ZM20.4345 18.9402C20.0164 15.5804 17.6391 12.8309 14.4823 11.8683L14.1907 12.8249C16.9761 13.6742 19.0735 16.1018 19.4421 19.0637L20.4345 18.9402Z"
+                                        fill="#000000" />
+                                </g>
+                            </g>
+                            <defs>
+                                <filter id="filter0_d_15_82" x="2.55444" y="3.5" width="18.8911" height="19"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                    <feOffset dy="1" />
+                                    <feGaussianBlur stdDeviation="0.5" />
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_15_82" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_15_82"
+                                        result="shape" />
+                                </filter>
+                                <clipPath id="clip0_15_82">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
                         </svg>
                     </li>
                 </ul>
             </div>
-        </nav>
-    </header>
+        </div>
 
-    <main>
-        <section class="hero-section">
-            <img src="./assets/img/banner.jpg" alt="" width="100%">
-            <p class="hero-text">Le soleil et la lune font de la lumière ensemble</p>
-        </section>
-    </main>
+        <div class="flex container hamburger--container">
+            <div class="hamburger"></div>
+        </div>
+    </nav>
 
-    <footer>
-        
-    </footer>
-
-    <script src="script.js"></script>
 </body>
+
 </html>
