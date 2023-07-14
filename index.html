@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>US Streetwear</title>
     <link rel="stylesheet" href="./assets/css/main.css">
+    <script defer src="./assets/js/main.js"></script>
 </head>
 
 <body>
@@ -18,15 +19,19 @@
         <div class="flex container nav--container">
             <div class="flex nav--links">
                 <ul class="flex nav--list">
-                    <li class="flex nav--items" id="#translate" data-translate='top'>Haut</li>
-                    <li class="flex nav--items" id="#translate" data-translate='bottom'>Bas</li>
-                    <li class="flex nav--items" id="#translate" data-translate='hat'>Chapeau</li>
+                    <li class="flex nav--items" id="translate" data-translate='top'>Haut</li>
+                    <li class="flex nav--items" id="translate" data-translate='bottom'>Bas</li>
+                    <li class="flex nav--items" id="translate" data-translate='hat'>Chapeau</li>
                 </ul>
             </div>
             <div class="flex nav--client">
                 <ul class="flex nav--list">
                     <li class="flex nav--items menu--toggler">
                         <span id="lang">FR</span>
+                        <ul class="language-sub-menu">
+                            <li class="flex sub-items" id='fr'>FR</li>
+                            <li class="flex sub-items" id='en'>EN</li>
+                        </ul>
                     </li>
                     <li class="flex nav--items">
                         <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none"

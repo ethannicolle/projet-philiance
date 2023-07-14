@@ -1,4 +1,6 @@
-:root {}
+:root {
+    --background-color: rgba(0, 0, 0, 0.105);
+}
 
 * {
     box-sizing: border-box;
@@ -28,6 +30,8 @@ nav {
     font-size: 1.4em;
 }
 
+/* Navbar global*/
+
 /* LOGO */
 .logo--container {
     width: 10%;
@@ -38,6 +42,7 @@ nav {
 }
 
 /* Navbar */
+
 .nav--container {
     width: 90%;
 }
@@ -60,6 +65,16 @@ ul {
     height: 100%;
 }
 
+.nav--links .nav--list li{
+    padding: 20px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.nav--links .nav--list li:hover {
+    background-color: var(--background-color);
+}
+
 /* Nav client */
 
 .nav--client {
@@ -72,6 +87,39 @@ ul {
     width: 40px;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+/* Lang selector */
+
+.menu--toggler {
+    position: relative;
+}
+
+.language-sub-menu {
+    display: none;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    border: 1px solid black;
+}
+
+.sub-items {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    transition: background-color 0.3s;
+}
+
+.sub-items:hover {
+    background-color: var(--background-color);
+}
+
+.show-sub-menu {
+    display: block;
 }
 
 /* Hamburger menu */
