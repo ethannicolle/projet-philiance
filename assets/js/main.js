@@ -10,12 +10,16 @@ const langs = {
     'en': {
         'top': 'Top',
         'bottom': 'Bottom',
-        'hat': 'Hat'
+        'hat': 'Hat',
+        'slogan': 'The sun and the moon make light together.',
+        'our-products': 'Our products'
     },
     'fr': {
         'top': 'Haut',
         'bottom': 'Bas',
-        'hat': 'Chapeau'
+        'hat': 'Chapeau',
+        'slogan': 'Le soleil et la lune font de la lumière ensemble.',
+        'our-products': 'Nos produits'
     }
 }
 

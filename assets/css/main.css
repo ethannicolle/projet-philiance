@@ -212,6 +212,7 @@ main {
 
 .top {
     background-image: url('../img/top.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -221,6 +222,7 @@ main {
 
 .bottom {
     background-image: url('../img/bottom.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -231,6 +233,7 @@ main {
 
 .hat {
     background-image: url('../img/hat.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -295,3 +298,39 @@ footer {
     margin-top: 20px;
 }
 
+
+/* Shop section */
+
+.products {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-height: 800px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    place-items: center;
+}
+
+.product-card {
+    height: 500px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card-image {
+    width: 100%;
+    height: 300px;
+}
+
+.card-buy a {
+    padding: 5px;
+    background-color: rgb(31, 30, 30);
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+}
