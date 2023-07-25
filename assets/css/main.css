@@ -35,6 +35,7 @@ nav {
 /* LOGO */
 .logo--container {
     width: 10%;
+    cursor: pointer;
 }
 
 .logo {
@@ -346,7 +347,7 @@ footer {
 
 .product-cart {
     width: 100%;
-    height: 100px;
+    min-height: 100px;
     gap: 10px;
     border: 1px solid black;
     border-radius: 10px;
@@ -474,4 +475,158 @@ footer {
 
 .account-info {
     font-size: 24px;
+}
+
+@media screen and (max-width: 1430px) {
+    .products{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hero {
+        flex-direction: column-reverse;
+        min-height: 800px;
+    }
+
+    .text--section {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .image--section {
+        width: 100%;
+        height: 600px;
+    }
+
+    .image--section img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .bottom {
+        background-position: 30%;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cart-info p {
+        font-size: 10px;
+    }
+    .cart--container-all {
+        flex-direction: column;
+    }
+    .pres-grid {
+        grid-template-columns: repeat(1, 1fr);
+        height: 900px;
+    }
+    .top {
+        background-image: url('../img/top.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .top:hover {
+        background-position: 80%;
+    }
+    
+    .bottom {
+        background-image: url('../img/bottom.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .bottom:hover {
+        background-position: 60%;
+    }
+    
+    
+    .hat {
+        background-image: url('../img/hat.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .hat:hover {
+        background-position: 20%;
+    }
+
+    .our-products {
+        min-height: 1000px;
+    }
+
+    .nav--container {
+        position: absolute;
+        background-color: white;
+        display: none;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .nav--items {
+        z-index: 12;
+    }
+
+    .language-sub-menu {
+        position: absolute;
+        top: -100px;
+    }
+
+    .nav--list {
+        flex-direction: column;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .logo--container {
+        z-index: 11;
+    }
+
+    .hamburger--container {
+        display: flex;
+        width: 50px;
+        height: 50px;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 11;
+    }
+
+    .hamburger {
+        position: relative;
+        width: 40px;
+        height: 2px;
+        background-color: grey;
+        border-radius: 5px;
+    }
+    .hamburger::before {
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 2px;
+        background-color: grey;
+        border-radius: 5px;
+        bottom: 10px;
+    }
+    .hamburger::after {
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 2px;
+        background-color: grey;
+        border-radius: 5px;
+        top: 10px;
+    }
+
 }

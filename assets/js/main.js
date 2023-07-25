@@ -23,6 +23,35 @@ const langs = {
     }
 }
 
+const logoContainer = document.querySelector('.logo--container')
+
+logoContainer.addEventListener('click', () => {
+    location.href = '/'
+})
+
+const hamburger = document.querySelector('.hamburger--container'),
+    navContainer = document.querySelector('.nav--container')
+
+hamburger.addEventListener('click', () => {
+    if(navContainer.style.display == 'none') {
+        navContainer.style.display = 'flex';
+    } else {
+        navContainer.style.display = 'none';
+    }
+})
+
+const navPanier = document.querySelector('#panier')
+
+navPanier.addEventListener('click', () => {
+    location.href = '/cart.html'
+})
+
+const navCompte = document.querySelector('#account')
+
+navCompte.addEventListener('click', () => {
+    location.href = '/account.html'
+})
+
 const translateItems = document.querySelectorAll('#translate'),
     langSpan = document.querySelector('#lang'),
     french = document.querySelector('#fr'),
