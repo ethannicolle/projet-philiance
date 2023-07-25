@@ -28,6 +28,14 @@ const translateItems = document.querySelectorAll('#translate'),
     french = document.querySelector('#fr'),
     english = document.querySelector('#en')
 
+translateItems.forEach(items => {
+    if(items.dataset.link == "true") {
+        items.addEventListener('click', () => {
+            location.href = items.dataset.url
+        })
+    }
+})
+
 french.addEventListener('click', () => {
     localStorage.setItem('lang', 'fr')
     location.reload()

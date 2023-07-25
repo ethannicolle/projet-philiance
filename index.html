@@ -19,9 +19,9 @@
         <div class="flex container nav--container">
             <div class="flex nav--links">
                 <ul class="flex nav--list">
-                    <li class="flex nav--items" id="translate" data-translate='top'>Haut</li>
-                    <li class="flex nav--items" id="translate" data-translate='bottom'>Bas</li>
-                    <li class="flex nav--items" id="translate" data-translate='hat'>Chapeau</li>
+                    <li class="flex nav--items" id="translate" data-translate='top' data-link="true" data-url="http://127.0.0.1:5500/products.html?type=top">Haut</li>
+                    <li class="flex nav--items" id="translate" data-translate='bottom' data-link="true" data-url="http://127.0.0.1:5500/products.html?type=bottom">Bas</li>
+                    <li class="flex nav--items" id="translate" data-translate='hat' data-link="true" data-url="http://127.0.0.1:5500/products.html?type=hat">Chapeau</li>
                 </ul>
             </div>
             <div class="flex nav--client">
@@ -104,22 +104,22 @@
                 <img src="./assets/img/banner.jpg" width="95%" alt="">
             </div>
         </section>
-        <section class="flex our-products">
+        <section id="products" class="flex our-products">
             <h2 id="translate" data-translate="our-products">Nos produits</h3>
             <div class="grid pres-grid">
                 <div class="top product-pres">
                     <div class="flex button-show">
-                        <a class="flex" href="#" id="translate" data-translate='top'>Haut</a>
+                        <a class="flex" href="products.html?type=top" id="translate" data-translate='top'>Haut</a>
                     </div>
                 </div>
                 <div class="bottom product-pres">
                     <div class="flex button-show">
-                        <a class="flex" href="#" id="translate" data-translate='bottom'>Bas</a>
+                        <a class="flex" href="products.html?type=bottom" id="translate" data-translate='bottom'>Bas</a>
                     </div>
                 </div>
                 <div class="hat product-pres">
                     <div class="flex button-show">
-                        <a class="flex" href="#" id="translate" data-translate='hat'>Chapeau</a>
+                        <a class="flex" href="products.html?type=hat" id="translate" data-translate='hat'>Chapeau</a>
                     </div>
                 </div>
             </div>
