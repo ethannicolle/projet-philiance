@@ -395,3 +395,83 @@ footer {
 .buy-now a:hover {
     background-color: rgb(57, 55, 55);
 }
+
+/* Login section */
+
+.login--container {
+    justify-content: center;
+    align-items: center;
+    min-height: 800px;
+}
+
+.login--container form {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 400px;
+    min-height: 300px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.login--container div {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.login--container input {
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    outline: none;
+    padding: 0 5px;
+}
+
+.login--container button {
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(31, 30, 30);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.login--container button:hover {
+    background-color: rgb(57, 55, 55);
+}
+
+/* Account section */
+
+.account--container {
+    width: 100%;
+    min-height: 750px;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-card {
+    width: 400px;
+    min-height: 300px;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.account-image {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-info {
+    font-size: 24px;
+}
