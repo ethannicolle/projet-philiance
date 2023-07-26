@@ -19,9 +19,9 @@
         <div class="flex container nav--container">
             <div class="flex nav--links">
                 <ul class="flex nav--list">
-                    <li class="flex nav--items" id="translate" data-translate='top' data-link="true" data-url="http://127.0.0.1/products.php?type=top">Haut</li>
-                    <li class="flex nav--items" id="translate" data-translate='bottom' data-link="true" data-url="http://127.0.0.1/products.php?type=bottom">Bas</li>
-                    <li class="flex nav--items" id="translate" data-translate='hat' data-link="true" data-url="http://127.0.0.1/products.php?type=hat">Chapeau</li>
+                    <li class="flex nav--items" id="translate" data-translate='top' data-link="true" data-url="<?= $_SERVER['SERVER_ADDR'] ?>/products.php?type=top">Haut</li>
+                    <li class="flex nav--items" id="translate" data-translate='bottom' data-link="true" data-url="<?= $_SERVER['SERVER_ADDR'] ?>/products.php?type=bottom">Bas</li>
+                    <li class="flex nav--items" id="translate" data-translate='hat' data-link="true" data-url="<?= $_SERVER['SERVER_ADDR'] ?>/products.php?type=hat">Chapeau</li>
                 </ul>
             </div>
             <div class="flex nav--client">
