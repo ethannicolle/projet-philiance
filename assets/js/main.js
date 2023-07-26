@@ -43,13 +43,13 @@ hamburger.addEventListener('click', () => {
 const navPanier = document.querySelector('#panier')
 
 navPanier.addEventListener('click', () => {
-    location.href = '/cart.html'
+    location.href = '/cart.php'
 })
 
 const navCompte = document.querySelector('#account')
 
 navCompte.addEventListener('click', () => {
-    location.href = '/account.html'
+    location.href = '/account.php'
 })
 
 const translateItems = document.querySelectorAll('#translate'),

@@ -19,9 +19,9 @@
         <div class="flex container nav--container">
             <div class="flex nav--links">
                 <ul class="flex nav--list">
-                    <li class="flex nav--items" id="translate" data-translate='top' data-link="true" data-url="http://127.0.0.1:5500/products.html?type=top">Haut</li>
-                    <li class="flex nav--items" id="translate" data-translate='bottom' data-link="true" data-url="http://127.0.0.1:5500/products.html?type=bottom">Bas</li>
-                    <li class="flex nav--items" id="translate" data-translate='hat' data-link="true" data-url="http://127.0.0.1:5500/products.html?type=hat">Chapeau</li>
+                    <li class="flex nav--items" id="translate" data-translate='top' data-link="true" data-url="http://127.0.0.1/products.php?type=top">Haut</li>
+                    <li class="flex nav--items" id="translate" data-translate='bottom' data-link="true" data-url="http://127.0.0.1/products.php?type=bottom">Bas</li>
+                    <li class="flex nav--items" id="translate" data-translate='hat' data-link="true" data-url="http://127.0.0.1/products.php?type=hat">Chapeau</li>
                 </ul>
             </div>
             <div class="flex nav--client">
@@ -92,44 +92,3 @@
             <div class="hamburger"></div>
         </div>
     </nav>
-
-    <main>
-        <div class="flex login--container">
-            <form class="flex" method="post">
-                <div class="flex">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
-                </div>
-                <div class="flex">
-                    <label for="password">Mot de passe</label>
-                    <input type="password" name="password" id="password">
-                </div>
-                <button type="submit">Connexion</button>
-            </form>
-        </div>
-    </main>
-
-    <footer>
-        <div class="footer-logo">
-            <h2 class="logo">US</h2>
-        </div>
-        <div class="legal-mention">
-            <h4>Mention légales</h4>
-            <ul>
-                <li>CGU</li>
-                <li>CGV</li>
-            </ul>
-        </div>
-        <div class="contact">
-            <h4>Contact</h4>
-            <ul>
-                <li>contact@us.com</li>
-                <li>06.06.06.06.06</li>
-                <li>48 rue de Paris</li>
-            </ul>
-        </div>
-    </footer>
-
-</body>
-
-</html>

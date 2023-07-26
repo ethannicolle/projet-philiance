@@ -376,7 +376,6 @@ footer {
 
 .buy--container {
     width: 40%;
-    height: 100px;
     border: 1px solid black;
     border-radius: 10px;
     justify-content: center;
@@ -503,6 +502,12 @@ footer {
 
     .bottom {
         background-position: 30%;
+    }
+}
+
+@media screen and (min-width: 941px) {
+    .nav--container {
+        display: flex;
     }
 }
 
