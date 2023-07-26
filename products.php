@@ -7,7 +7,6 @@ include_once './includes/header.inc.php';
 $products = new Products($db);
 $produits = $products->getProducts();
 
-var_dump($produits);
 ?>
     <main>
         <section class="products">
