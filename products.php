@@ -1,11 +1,28 @@
 <?php
 session_start();
+
 require_once './class/Products.php';
 require_once './includes/database.php';
+$products = new Products($db);
+
+switch($_GET['type']) {
+    case 'top':
+        $produits = $products->getProductsByCategory('top');
+    break;
+    case 'bottom':
+        $produits = $products->getProductsByCategory('bottom');
+    break;
+    case 'hat':
+        $produits = $products->getProductsByCategory('hat');
+    break;
+    default:
+        header('Location: /index.php');
+        break;
+}
+
 include_once './includes/header.inc.php';
 
-$products = new Products($db);
-$produits = $products->getProducts();
+
 
 ?>
     <main>
@@ -26,7 +43,7 @@ $produits = $products->getProducts();
                             <p><?= $produit['description'] ?></p>
                         </div>
                         <div class="card-buy">
-                            <a href="#">Acheter</a>
+                            <a href="addtocart.php?id=<?= $produit['id'] ?>">Acheter</a>
                         </div>
                     </div>
 

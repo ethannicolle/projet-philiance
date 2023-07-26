@@ -26,7 +26,7 @@ const langs = {
 const logoContainer = document.querySelector('.logo--container')
 
 logoContainer.addEventListener('click', () => {
-    location.href = '/'
+    location.href = 'index.php'
 })
 
 const hamburger = document.querySelector('.hamburger--container'),
@@ -43,13 +43,13 @@ hamburger.addEventListener('click', () => {
 const navPanier = document.querySelector('#panier')
 
 navPanier.addEventListener('click', () => {
-    location.href = '/cart.php'
+    location.href = 'cart.php'
 })
 
 const navCompte = document.querySelector('#account')
 
 navCompte.addEventListener('click', () => {
-    location.href = '/account.php'
+    location.href = 'account.php'
 })
 
 const translateItems = document.querySelectorAll('#translate'),
